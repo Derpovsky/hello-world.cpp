@@ -1,0 +1,60 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(0, ""); // русский завезли
+
+	int option; // выбор действия
+	float a, b;
+	
+	cout << "1) Сложение" << endl;
+	cout << "2) Вычитание" << endl;
+	cout << "3) Умножение" << endl;
+	cout << "4) Деление" << endl << endl << endl << endl;
+	cout << "Выберите операцию: ";
+	cin >> option;
+
+	if (option == 1) //сложение
+	{
+		cout << endl << "Вы выбрали сложение" << endl;
+		cout << "Введите первое число: ";
+		cin >> a;
+		cout << "Введите второе число: ";
+		cin >> b;
+		cout << "Результат операции: " << a + b << endl;
+	}
+
+	if (option == 2) // вычитание
+	{
+		cout << endl << "Вы выбрали вычитание" << endl;
+		cout << "Введите первое число: ";
+		cin >> a;
+		cout << "Введите второе число: ";
+		cin >> b;
+		cout << "Результат операции: " << a - b << endl;
+	}
+
+	if (option == 3) // умножение
+	{
+		cout << endl << "Вы выбрали умножение" << endl;
+		cout << "Введите первое число: ";
+		cin >> a;
+		cout << "Введите второе число: ";
+		cin >> b;
+		cout << "Результат операции: " << a * b << endl;
+	}
+
+	if (option == 4) // деление
+	{
+		cout << endl << "Вы выбрали деление" << endl;
+		cout << "Введите первое число: ";
+		cin >> a;
+		cout << "Введите второе число: ";
+		cin >> b;
+		cout << "Результат операции: " << a / b << endl;
+	}
+
+	system("pause");
+	return 0;
+}
